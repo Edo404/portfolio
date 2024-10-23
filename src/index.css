@@ -22,7 +22,7 @@ header {
   font-family: 'Lato', sans-serif; /* Updated font-family to Lato */
   width: 100%; /* Ensure it covers the full width of the viewport */
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding: 10px 20px;
   box-sizing: border-box; /* Prevents padding from adding to the width */
