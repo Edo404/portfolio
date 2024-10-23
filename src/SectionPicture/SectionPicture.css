@@ -5,6 +5,7 @@
     padding-top: 100px;
     max-width: 1200px; /* Max width of the section */
     margin: 0 auto; /* Center the section on the page */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .text-container {
@@ -16,12 +17,14 @@
     font-size: 4em; /* Greeting font size */
     font-family: 'Lato', sans-serif; /* Consistent font-family */
     color: hsl(0, 0%, 100%); /* Text color */
+    margin: 10px;
 }
 
 .greeting-p {
     font-size: 1em; /* Greeting font size */
     font-family: 'Lato', sans-serif; /* Consistent font-family */
     color: hsl(0, 0%, 75%); /* Text color */
+    margin: 0;
 }
 
 .image-container {
@@ -35,6 +38,27 @@
     width: 250px; /* Set width of the image */
     height: 250px; /* Set height of the image */
     border-radius: 50%; /* Make the image round */
+    border: 3px solid;
+    border-color: hsl(0, 0%, 75%);
     object-fit: cover; /* Cover the entire area without distortion */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 750px) {
+    .section-picture {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding-top: 50px; /* Adjust padding for smaller screens */
+    }
+
+    .text-container {
+        margin-right: 0; /* Remove margin on smaller screens */
+        text-align: center; /* Center align text */
+        margin-top: 20px; /* Space between image and text */
+    }
+
+    .image-container {
+        margin-top: 20px; /* Space below the image */
+    }
 }
