@@ -1,7 +1,6 @@
 .about-me {
     padding: 50px 20px; /* Padding for the section */
     text-align: center; /* Center align text */
-    
     border-radius: 10px; /* Rounded corners */
     margin: 20px; /* Margin around the section */
 }
@@ -18,7 +17,7 @@
     color: hsl(0, 0%, 40%); /* Paragraph color */
 }
 
-.button-about{
+.button-about {
     background-color: hsl(0, 0%, 17%);
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
@@ -30,7 +29,32 @@
     border-color: hsl(0, 0%, 100%);
 }
 
-.button-about:hover{
+.button-about:hover {
     background-color: hsl(23, 95%, 32%);
     transition: 0.4s;
+}
+
+/* Styles for the image popup overlay */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.popup-image:hover {
+    cursor: pointer;
 }
