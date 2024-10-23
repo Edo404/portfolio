@@ -17,3 +17,20 @@
     font-size: 1.2em; /* Paragraph font size */
     color: hsl(0, 0%, 40%); /* Paragraph color */
 }
+
+.button-about{
+    background-color: hsl(0, 0%, 17%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 100%);
+}
+
+.button-about:hover{
+    background-color: hsl(23, 95%, 32%);
+    transition: 0.4s;
+}

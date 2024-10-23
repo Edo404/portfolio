@@ -11,6 +11,7 @@ const AboutMe = () => {
                 through clean, efficient code and beautiful interfaces. In my spare time, I enjoy exploring new technologies 
                 and working on personal projects that challenge my skills.
             </p>
+            <button className="button-about">Download CV</button>
         </section>
     );
 };
