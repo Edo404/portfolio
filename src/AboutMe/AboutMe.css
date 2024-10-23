@@ -1,0 +1,19 @@
+.about-me {
+    padding: 50px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+    
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+}
+
+.about-me-title {
+    font-size: 2.5em; /* Title font size */
+    font-family: 'Lato', sans-serif; /* Consistent font-family */
+    margin-bottom: 30px; /* Space below title */
+    color: hsl(0, 0%, 100%); /* Title color */
+}
+
+.about-me-description {
+    font-size: 1.2em; /* Paragraph font size */
+    color: hsl(0, 0%, 40%); /* Paragraph color */
+}

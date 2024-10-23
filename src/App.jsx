@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Header/Header'
 import SectionPicture from './SectionPicture/SectionPicture'
 import SectionProjects from './SectionProjects/SectionProjects'
+import AboutMe from './AboutMe/AboutMe'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,8 +13,9 @@ function App() {
       <Header/>
       <SectionPicture/>
       <hr/>
-      <SectionProjects/>
+      <AboutMe/>
       <hr/>
+      <SectionProjects/>
     </>
   )
 }
