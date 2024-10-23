@@ -11,8 +11,8 @@ const SectionPicture = () => {
                     I enjoy creating websites, ones that suit your desires and needs using the latest technologies and cleanest design.
                 </p>
                 <div className="button-container">
-                    <button className="button">Projects</button>
-                    <button className="button">Contact me</button>
+                    <button className="button-projects">Projects</button>
+                    <button className="button-contact">Contact me</button>
                 </div>
             </div>
             <div className="image-container">

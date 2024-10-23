@@ -39,9 +39,47 @@
     height: 250px; /* Set height of the image */
     border-radius: 50%; /* Make the image round */
     border: 3px solid;
-    border-color: hsl(0, 0%, 75%);
+    border-color: hsl(23, 95%, 52%);
     object-fit: cover; /* Cover the entire area without distortion */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.button-container{
+    margin-top: 20px;
+
+}
+
+.button-projects{
+    background-color: hsl(0, 0%, 17%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 100%);
+}
+
+.button-contact{
+    background-color: hsl(23, 95%, 52%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    border: 1px solid;
+}
+
+.button-projects:hover{
+    background-color: hsl(23, 95%, 32%);
+    transition: 0.3s;
+}
+
+.button-contact:hover{
+    background-color: hsl(23, 95%, 32%);
+    transition: 0.3s;
 }
 
 /* Media query for responsiveness */
