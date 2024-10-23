@@ -7,13 +7,21 @@ header {
     z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
+.picture-header{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid;
+    border-color: hsl(23, 95%, 52%);
+}
+
 .navbar {
     background-color: hsl(0, 0%, 15%);
     font-size: 1em;
     font-family: 'Lato', sans-serif; /* Updated font-family to Lato */
     width: 100%; /* Ensure it covers the full width of the viewport */
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     box-sizing: border-box; /* Prevents padding from adding to the width */
@@ -36,6 +44,11 @@ header {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.nav-items li a:hover{
+    color: hsl(23, 95%, 52%);
+    transition: 0.4s;
 }
 
 /* Hamburger button styling */

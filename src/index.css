@@ -8,3 +8,10 @@ body, html {
   width: 100%;
   background-color: hsl(0, 0%, 17%);
 }
+
+hr{
+  margin-top: 15vh;
+  border: 0.5px solid;
+  border-color: hsl(0, 0%, 25%);
+  width: 70%;
+}

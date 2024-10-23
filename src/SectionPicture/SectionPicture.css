@@ -74,12 +74,12 @@
 
 .button-projects:hover{
     background-color: hsl(23, 95%, 32%);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .button-contact:hover{
     background-color: hsl(23, 95%, 32%);
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Media query for responsiveness */

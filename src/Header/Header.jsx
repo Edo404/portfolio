@@ -11,6 +11,11 @@ const Header = () => {
     return (
         <header>
         <nav className="navbar">
+            <img 
+                src="src/assets/Personal.png" // Replace with your image URL
+                alt="Edoardo" 
+                className="picture-header" 
+            />
             <ul className={`nav-items ${isOpen ? 'active' : ''}`}>
                 <li className="tags"><a href="#">Home</a></li>
                 <li className="tags"><a href="#">About Me</a></li>
