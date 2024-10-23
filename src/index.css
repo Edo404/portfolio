@@ -1,68 +1,118 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Import the Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* General reset styles */
+body, html {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  width: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+header {
+  width: 100%;
+  position: fixed; /* Ensures the header stays at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays on top of other elements */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+.navbar {
+  background-color: hsl(39, 100%, 70%);
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-family: 'Lato', sans-serif; /* Updated font-family to Lato */
+  width: 100%; /* Ensure it covers the full width of the viewport */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box; /* Prevents padding from adding to the width */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* List items are displayed inline */
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden; /* Prevents any overflow issues */
+}
+
+.nav-items li {
+  padding: 10px 15px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none; /* Initially hidden, only visible on mobile */
+  cursor: pointer;
+  background-color: white; /* White background */
+  border: 2px solid lightgray; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  width: 32px; /* Reduced width for smaller size (20% smaller from 40px) */
+  height: 32px; /* Reduced height for smaller size (20% smaller from 40px) */
+  display: flex; /* Center the hamburger icon */
+  flex-direction: column; /* Arrange lines in a column */
+  justify-content: center; /* Center lines vertically */
+  align-items: center; /* Center lines horizontally */
+  padding: 0; /* Remove padding to ensure centering */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Lines for the hamburger icon */
+.hamburger-line {
+  width: 100%; /* Make lines full width of the hamburger button */
+  height: 3px; /* Height of each line (slightly lighter) */
+  background-color: rgba(0, 0, 0, 0.7); /* Lightened color of the lines */
+  transition: all 0.3s; /* Smooth transition for transformations */
+  margin: 2px 0; /* Add margin for spacing between lines */
+}
+
+/* Active styling for hamburger button */
+.hamburger.active .line1 {
+  transform: rotate(45deg) translate(5px, 5px); /* Centered rotation for the first line */
+  width: 40px;
+}
+
+.hamburger.active .line2 {
+  opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.active .line3 {
+  transform: rotate(-45deg) translate(4px, -7px); /* Centered rotation for the third line */
+  width: 40px;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 750px) {
+  .nav-items {
+    display: none; /* Hide the menu by default */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    right: 0;
+    top: 60px; /* Offset below the fixed navbar */
+    background-color: hsl(39, 100%, 70%);
+    width: 100%; /* Ensure menu spans full width on mobile */
+    box-sizing: border-box; /* Include padding within the width */
   }
-  a:hover {
-    color: #747bff;
+
+  .nav-items.active {
+    display: flex; /* Show menu when active */
   }
-  button {
-    background-color: #f9f9f9;
+
+  .hamburger {
+    display: flex; /* Show hamburger icon only on mobile */
+  }
+}
+
+/* Hide the hamburger button on larger screens */
+@media screen and (min-width: 751px) {
+  .hamburger {
+    display: none; /* Hide the hamburger icon */
   }
 }
