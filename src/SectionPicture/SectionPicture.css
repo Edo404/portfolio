@@ -1,0 +1,40 @@
+.section-picture {
+    display: flex; /* Use flexbox for horizontal layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the text and image */
+    padding-top: 100px;
+    max-width: 1200px; /* Max width of the section */
+    margin: 0 auto; /* Center the section on the page */
+}
+
+.text-container {
+    flex: 1; /* Allow text container to take available space */
+    margin-right: 100px; /* Space between text and image */
+}
+
+.greeting {
+    font-size: 4em; /* Greeting font size */
+    font-family: 'Lato', sans-serif; /* Consistent font-family */
+    color: hsl(0, 0%, 100%); /* Text color */
+}
+
+.greeting-p {
+    font-size: 1em; /* Greeting font size */
+    font-family: 'Lato', sans-serif; /* Consistent font-family */
+    color: hsl(0, 0%, 75%); /* Text color */
+}
+
+.image-container {
+    flex: 0 0 250px; /* Fixed size for the image container */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.picture {
+    width: 250px; /* Set width of the image */
+    height: 250px; /* Set height of the image */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Cover the entire area without distortion */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
