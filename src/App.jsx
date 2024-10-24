@@ -4,6 +4,7 @@ import Header from './Header/Header'
 import SectionPicture from './SectionPicture/SectionPicture'
 import SectionProjects from './SectionProjects/SectionProjects'
 import AboutMe from './AboutMe/AboutMe'
+import ContactMe from './ContactMe/ContactMe'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,8 @@ function App() {
       <AboutMe/>
       <hr/>
       <SectionProjects/>
+      <hr/>
+      <ContactMe/>
     </>
   )
 }

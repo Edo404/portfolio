@@ -1,0 +1,72 @@
+.contact-me {
+    padding: 50px 20px; /* Padding for the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+}
+
+.contact-me-title {
+    font-size: 2.5em; /* Title font size */
+    font-family: 'Lato', sans-serif; /* Consistent font-family */
+    margin-bottom: 40px; /* Space below title */
+    color: hsl(0, 0%, 100%); /* Title color */
+}
+
+/* Styling the form like a table */
+.contact-form {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px; /* Max width for larger screens */
+}
+
+.form-group {
+    display: table-row;
+    margin-bottom: 15px; /* Space between form rows */
+}
+
+.form-group label {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 10px;
+    text-align: left; /* Align labels to the left */
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.form-group input, .form-group textarea {
+    display: table-cell;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 40%); /* Border around inputs */
+}
+
+textarea {
+    resize: vertical; /* Allow textarea to be resized vertically */
+    height: 100px; /* Initial height */
+    width: 100%;
+}
+
+.submit-button {
+    background-color: hsl(0, 0%, 17%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    font-size: 1em;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-color: hsl(0, 0%, 100%);
+    
+    /* Center the button */
+    display: block;
+    margin: 20px auto 0 auto; /* Top margin 20px, horizontal auto to center */
+}
+
+.submit-button:hover {
+    background-color: hsl(23, 95%, 32%);
+    transition: 0.4s;
+}
