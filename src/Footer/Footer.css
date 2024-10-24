@@ -1,0 +1,42 @@
+.footer {
+    background-color: hsl(0, 0%, 17%); /* Transparent background */
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+.icon {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 100%); /* White icons */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    color: hsl(23, 95%, 32%); /* Change icon color on hover */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Make the footer responsive */
+@media (max-width: 768px) {
+    .icon {
+        font-size: 1.3em; /* Adjust icon size for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        font-size: 1.1em; /* Further adjust icon size for mobile phones */
+    }
+    .footer {
+        padding: 15px; /* Reduce padding on small screens */
+    }
+}
