@@ -29,12 +29,12 @@ function App() {
             <hr />
             <ContactMe />
             <hr />
+            <Footer />
           </>
         } />
         <Route path="/projects" element={<SectionProjects />} />
         <Route path="/contactMe" element={<ContactMe />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }
