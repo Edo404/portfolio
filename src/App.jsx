@@ -7,6 +7,7 @@ import SectionProjects from './SectionProjects/SectionProjects';
 import AboutMe from './AboutMe/AboutMe';
 import ContactMe from './ContactMe/ContactMe';
 import Footer from './Footer/Footer';
+import Project from './Project/Project';
 
 function App() {
 
