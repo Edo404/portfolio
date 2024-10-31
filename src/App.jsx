@@ -30,11 +30,14 @@ function App() {
             <hr />
             <ContactMe />
             <hr />
+            <Project />
+            <hr />
             <Footer />
           </>
         } />
         <Route path="/projects" element={<SectionProjects />} />
         <Route path="/contactMe" element={<ContactMe />} />
+        
       </Routes>
     </Router>
   );
